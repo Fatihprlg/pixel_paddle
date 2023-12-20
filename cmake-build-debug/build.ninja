@@ -52,56 +52,63 @@ build cmake_object_order_depends_target_PixelPaddle: phony || CMakeFiles/PixelPa
 build CMakeFiles/PixelPaddle.dir/main.cpp.obj: CXX_COMPILER__PixelPaddle_unscanned_Debug D$:/CppProjects/PixelPaddle/main.cpp || cmake_object_order_depends_target_PixelPaddle
   DEP_FILE = CMakeFiles\PixelPaddle.dir\main.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -ID:/CppProjects/PixelPaddle/libs/SDL2/include -ID:/CppProjects/PixelPaddle/libs/SDL2_Image/include
+  INCLUDES = -ID:/CppProjects/PixelPaddle/libs/SDL2/include/SDL2 -ID:/CppProjects/PixelPaddle/libs/SDL2_Image/include/SDL2
   OBJECT_DIR = CMakeFiles\PixelPaddle.dir
   OBJECT_FILE_DIR = CMakeFiles\PixelPaddle.dir
 
 build CMakeFiles/PixelPaddle.dir/src/engine/GameRenderer.cpp.obj: CXX_COMPILER__PixelPaddle_unscanned_Debug D$:/CppProjects/PixelPaddle/src/engine/GameRenderer.cpp || cmake_object_order_depends_target_PixelPaddle
   DEP_FILE = CMakeFiles\PixelPaddle.dir\src\engine\GameRenderer.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -ID:/CppProjects/PixelPaddle/libs/SDL2/include -ID:/CppProjects/PixelPaddle/libs/SDL2_Image/include
+  INCLUDES = -ID:/CppProjects/PixelPaddle/libs/SDL2/include/SDL2 -ID:/CppProjects/PixelPaddle/libs/SDL2_Image/include/SDL2
   OBJECT_DIR = CMakeFiles\PixelPaddle.dir
   OBJECT_FILE_DIR = CMakeFiles\PixelPaddle.dir\src\engine
 
 build CMakeFiles/PixelPaddle.dir/src/engine/GameObject.cpp.obj: CXX_COMPILER__PixelPaddle_unscanned_Debug D$:/CppProjects/PixelPaddle/src/engine/GameObject.cpp || cmake_object_order_depends_target_PixelPaddle
   DEP_FILE = CMakeFiles\PixelPaddle.dir\src\engine\GameObject.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -ID:/CppProjects/PixelPaddle/libs/SDL2/include -ID:/CppProjects/PixelPaddle/libs/SDL2_Image/include
+  INCLUDES = -ID:/CppProjects/PixelPaddle/libs/SDL2/include/SDL2 -ID:/CppProjects/PixelPaddle/libs/SDL2_Image/include/SDL2
   OBJECT_DIR = CMakeFiles\PixelPaddle.dir
   OBJECT_FILE_DIR = CMakeFiles\PixelPaddle.dir\src\engine
 
 build CMakeFiles/PixelPaddle.dir/src/engine/Vector2.cpp.obj: CXX_COMPILER__PixelPaddle_unscanned_Debug D$:/CppProjects/PixelPaddle/src/engine/Vector2.cpp || cmake_object_order_depends_target_PixelPaddle
   DEP_FILE = CMakeFiles\PixelPaddle.dir\src\engine\Vector2.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -ID:/CppProjects/PixelPaddle/libs/SDL2/include -ID:/CppProjects/PixelPaddle/libs/SDL2_Image/include
+  INCLUDES = -ID:/CppProjects/PixelPaddle/libs/SDL2/include/SDL2 -ID:/CppProjects/PixelPaddle/libs/SDL2_Image/include/SDL2
   OBJECT_DIR = CMakeFiles\PixelPaddle.dir
   OBJECT_FILE_DIR = CMakeFiles\PixelPaddle.dir\src\engine
 
 build CMakeFiles/PixelPaddle.dir/src/engine/Renderer.cpp.obj: CXX_COMPILER__PixelPaddle_unscanned_Debug D$:/CppProjects/PixelPaddle/src/engine/Renderer.cpp || cmake_object_order_depends_target_PixelPaddle
   DEP_FILE = CMakeFiles\PixelPaddle.dir\src\engine\Renderer.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -ID:/CppProjects/PixelPaddle/libs/SDL2/include -ID:/CppProjects/PixelPaddle/libs/SDL2_Image/include
+  INCLUDES = -ID:/CppProjects/PixelPaddle/libs/SDL2/include/SDL2 -ID:/CppProjects/PixelPaddle/libs/SDL2_Image/include/SDL2
   OBJECT_DIR = CMakeFiles\PixelPaddle.dir
   OBJECT_FILE_DIR = CMakeFiles\PixelPaddle.dir\src\engine
 
 build CMakeFiles/PixelPaddle.dir/src/engine/Collider.cpp.obj: CXX_COMPILER__PixelPaddle_unscanned_Debug D$:/CppProjects/PixelPaddle/src/engine/Collider.cpp || cmake_object_order_depends_target_PixelPaddle
   DEP_FILE = CMakeFiles\PixelPaddle.dir\src\engine\Collider.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -ID:/CppProjects/PixelPaddle/libs/SDL2/include -ID:/CppProjects/PixelPaddle/libs/SDL2_Image/include
+  INCLUDES = -ID:/CppProjects/PixelPaddle/libs/SDL2/include/SDL2 -ID:/CppProjects/PixelPaddle/libs/SDL2_Image/include/SDL2
   OBJECT_DIR = CMakeFiles\PixelPaddle.dir
   OBJECT_FILE_DIR = CMakeFiles\PixelPaddle.dir\src\engine
 
 build CMakeFiles/PixelPaddle.dir/src/engine/Component.cpp.obj: CXX_COMPILER__PixelPaddle_unscanned_Debug D$:/CppProjects/PixelPaddle/src/engine/Component.cpp || cmake_object_order_depends_target_PixelPaddle
   DEP_FILE = CMakeFiles\PixelPaddle.dir\src\engine\Component.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -ID:/CppProjects/PixelPaddle/libs/SDL2/include -ID:/CppProjects/PixelPaddle/libs/SDL2_Image/include
+  INCLUDES = -ID:/CppProjects/PixelPaddle/libs/SDL2/include/SDL2 -ID:/CppProjects/PixelPaddle/libs/SDL2_Image/include/SDL2
   OBJECT_DIR = CMakeFiles\PixelPaddle.dir
   OBJECT_FILE_DIR = CMakeFiles\PixelPaddle.dir\src\engine
 
 build CMakeFiles/PixelPaddle.dir/src/engine/GameManager.cpp.obj: CXX_COMPILER__PixelPaddle_unscanned_Debug D$:/CppProjects/PixelPaddle/src/engine/GameManager.cpp || cmake_object_order_depends_target_PixelPaddle
   DEP_FILE = CMakeFiles\PixelPaddle.dir\src\engine\GameManager.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -ID:/CppProjects/PixelPaddle/libs/SDL2/include -ID:/CppProjects/PixelPaddle/libs/SDL2_Image/include
+  INCLUDES = -ID:/CppProjects/PixelPaddle/libs/SDL2/include/SDL2 -ID:/CppProjects/PixelPaddle/libs/SDL2_Image/include/SDL2
+  OBJECT_DIR = CMakeFiles\PixelPaddle.dir
+  OBJECT_FILE_DIR = CMakeFiles\PixelPaddle.dir\src\engine
+
+build CMakeFiles/PixelPaddle.dir/src/engine/InputManager.cpp.obj: CXX_COMPILER__PixelPaddle_unscanned_Debug D$:/CppProjects/PixelPaddle/src/engine/InputManager.cpp || cmake_object_order_depends_target_PixelPaddle
+  DEP_FILE = CMakeFiles\PixelPaddle.dir\src\engine\InputManager.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -ID:/CppProjects/PixelPaddle/libs/SDL2/include/SDL2 -ID:/CppProjects/PixelPaddle/libs/SDL2_Image/include/SDL2
   OBJECT_DIR = CMakeFiles\PixelPaddle.dir
   OBJECT_FILE_DIR = CMakeFiles\PixelPaddle.dir\src\engine
 
@@ -113,9 +120,10 @@ build CMakeFiles/PixelPaddle.dir/src/engine/GameManager.cpp.obj: CXX_COMPILER__P
 #############################################
 # Link the executable PixelPaddle.exe
 
-build PixelPaddle.exe: CXX_EXECUTABLE_LINKER__PixelPaddle_Debug CMakeFiles/PixelPaddle.dir/main.cpp.obj CMakeFiles/PixelPaddle.dir/src/engine/GameRenderer.cpp.obj CMakeFiles/PixelPaddle.dir/src/engine/GameObject.cpp.obj CMakeFiles/PixelPaddle.dir/src/engine/Vector2.cpp.obj CMakeFiles/PixelPaddle.dir/src/engine/Renderer.cpp.obj CMakeFiles/PixelPaddle.dir/src/engine/Collider.cpp.obj CMakeFiles/PixelPaddle.dir/src/engine/Component.cpp.obj CMakeFiles/PixelPaddle.dir/src/engine/GameManager.cpp.obj
+build PixelPaddle.exe: CXX_EXECUTABLE_LINKER__PixelPaddle_Debug CMakeFiles/PixelPaddle.dir/main.cpp.obj CMakeFiles/PixelPaddle.dir/src/engine/GameRenderer.cpp.obj CMakeFiles/PixelPaddle.dir/src/engine/GameObject.cpp.obj CMakeFiles/PixelPaddle.dir/src/engine/Vector2.cpp.obj CMakeFiles/PixelPaddle.dir/src/engine/Renderer.cpp.obj CMakeFiles/PixelPaddle.dir/src/engine/Collider.cpp.obj CMakeFiles/PixelPaddle.dir/src/engine/Component.cpp.obj CMakeFiles/PixelPaddle.dir/src/engine/GameManager.cpp.obj CMakeFiles/PixelPaddle.dir/src/engine/InputManager.cpp.obj | D$:/CppProjects/PixelPaddle/libs/SDL2/lib/libSDL2.dll.a D$:/CppProjects/PixelPaddle/libs/SDL2/lib/libSDL2main.a D$:/CppProjects/PixelPaddle/libs/SDL2_Image/lib/libSDL2_image.dll.a
   FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_FLAGS = -static
+  LINK_LIBRARIES = D:/CppProjects/PixelPaddle/libs/SDL2/lib/libSDL2.dll.a  D:/CppProjects/PixelPaddle/libs/SDL2/lib/libSDL2main.a  D:/CppProjects/PixelPaddle/libs/SDL2_Image/lib/libSDL2_image.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\PixelPaddle.dir
   POST_BUILD = cd .
   PRE_LINK = cd .

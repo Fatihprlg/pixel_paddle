@@ -1275,7 +1275,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[mingw32;-mwindows;D:/CppProjects/PixelPaddle/libs/SDL2/lib/x64/SDL2main.lib;D:/CppProjects/PixelPaddle/libs/SDL2/lib/x64/SDL2.lib][D:/CppProjects/PixelPaddle/libs/SDL2/include][v()]"
+			"value" : "[mingw32;-mwindows;D:/CppProjects/PixelPaddle/libs/SDL2/lib/libSDL2main.a;D:/CppProjects/PixelPaddle/libs/SDL2/lib/libSDL2.dll.a][D:/CppProjects/PixelPaddle/libs/SDL2/include/SDL2][v()]"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_SDL2_image",
@@ -1287,7 +1287,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[D:/CppProjects/PixelPaddle/libs/SDL2_Image/lib/x64/SDL2_image.lib][D:/CppProjects/PixelPaddle/libs/SDL2_Image/include][v2.8.1()]"
+			"value" : "[D:/CppProjects/PixelPaddle/libs/SDL2_Image/lib/libSDL2_image.dll.a][D:/CppProjects/PixelPaddle/libs/SDL2_Image/include/SDL2][v2.8.1()]"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Threads",
@@ -1359,7 +1359,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/CppProjects/PixelPaddle/libs/SDL2/lib/x64/SDL2main.lib"
+			"value" : "D:/CppProjects/PixelPaddle/libs/SDL2/lib/libSDL2main.a"
 		},
 		{
 			"name" : "SDL2_IMAGE_INCLUDE_DIR",
@@ -1375,7 +1375,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "D:/CppProjects/PixelPaddle/libs/SDL2_Image/include"
+			"value" : "D:/CppProjects/PixelPaddle/libs/SDL2_Image/include/SDL2"
 		},
 		{
 			"name" : "SDL2_IMAGE_LIBRARY",
@@ -1391,7 +1391,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/CppProjects/PixelPaddle/libs/SDL2_Image/lib/x64/SDL2_image.lib"
+			"value" : "D:/CppProjects/PixelPaddle/libs/SDL2_Image/lib/libSDL2_image.dll.a"
 		},
 		{
 			"name" : "SDL2_INCLUDE_DIR",
@@ -1403,7 +1403,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "D:/CppProjects/PixelPaddle/libs/SDL2/include"
+			"value" : "D:/CppProjects/PixelPaddle/libs/SDL2/include/SDL2"
 		},
 		{
 			"name" : "SDL2_LIBRARY",
@@ -1415,7 +1415,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "mingw32;-mwindows;D:/CppProjects/PixelPaddle/libs/SDL2/lib/x64/SDL2main.lib;D:/CppProjects/PixelPaddle/libs/SDL2/lib/x64/SDL2.lib"
+			"value" : "mingw32;-mwindows;D:/CppProjects/PixelPaddle/libs/SDL2/lib/libSDL2main.a;D:/CppProjects/PixelPaddle/libs/SDL2/lib/libSDL2.dll.a"
 		},
 		{
 			"name" : "SDL2_LIBRARY_TEMP",
@@ -1427,7 +1427,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "mingw32;-mwindows;D:/CppProjects/PixelPaddle/libs/SDL2/lib/x64/SDL2main.lib;mingw32;-mwindows;D:/CppProjects/PixelPaddle/libs/SDL2/lib/x64/SDL2main.lib;mingw32;-mwindows;D:/CppProjects/PixelPaddle/libs/SDL2/lib/x64/SDL2main.lib;mingw32;-mwindows;D:/CppProjects/PixelPaddle/libs/SDL2/lib/x64/SDL2main.lib;mingw32;-mwindows;D:/CppProjects/PixelPaddle/libs/SDL2/lib/x64/SDL2main.lib;mingw32;-mwindows;D:/CppProjects/PixelPaddle/libs/SDL2/lib/x64/SDL2main.lib;mingw32;-mwindows;D:/CppProjects/PixelPaddle/libs/SDL2/lib/x64/SDL2main.lib;mingw32;-mwindows;D:/CppProjects/PixelPaddle/libs/SDL2/lib/x64/SDL2main.lib;mingw32;-mwindows;D:/CppProjects/PixelPaddle/libs/SDL2/lib/x64/SDL2main.lib;mingw32;-mwindows;D:/CppProjects/PixelPaddle/libs/SDL2/lib/x64/SDL2main.lib;mingw32;-mwindows;D:/CppProjects/PixelPaddle/libs/SDL2/lib/x64/SDL2main.lib;D:/CppProjects/PixelPaddle/libs/SDL2/lib/x64/SDL2.lib"
+			"value" : "mingw32;-mwindows;D:/CppProjects/PixelPaddle/libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/CppProjects/PixelPaddle/libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/CppProjects/PixelPaddle/libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/CppProjects/PixelPaddle/libs/SDL2/lib/libSDL2main.a;D:/CppProjects/PixelPaddle/libs/SDL2/lib/libSDL2.dll.a"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

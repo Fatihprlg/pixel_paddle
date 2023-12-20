@@ -9,19 +9,24 @@
 #include <vector>
 #include "GameObject.h"
 #include "GameRenderer.h"
+#include "InputManager.h"
 
 class GameManager {
 private:
     std::vector<GameObject*> m_game_objects;
-    GameRenderer* m_game_renderer;
+    static GameRenderer* m_game_renderer;
+    static InputManager* m_input_manager;
+    bool m_is_quitting;
 public:
     void setup_game();
     void update_frame();
+    void game_loop();
     void shutdown();
     void add_game_object(GameObject* go);
     void remove_game_object(GameObject* go);
-    GameRenderer* get_game_renderer();
-
+    void * quit_handler();
+    static GameRenderer* get_game_renderer();
+    static InputManager* get_input_manager();
 };
 
 

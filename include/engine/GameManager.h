@@ -14,8 +14,8 @@
 class GameManager {
 private:
     std::vector<GameObject*> m_game_objects;
-    static GameRenderer* m_game_renderer;
-    static InputManager* m_input_manager;
+    GameRenderer* m_game_renderer;
+    InputManager* m_input_manager;
     bool m_is_quitting;
 public:
     void setup_game();
@@ -25,8 +25,8 @@ public:
     void add_game_object(GameObject* go);
     void remove_game_object(GameObject* go);
     void * quit_handler();
-    static GameRenderer* get_game_renderer();
-    static InputManager* get_input_manager();
+    GameRenderer* get_game_renderer();
+    InputManager* get_input_manager();
 };
 
 

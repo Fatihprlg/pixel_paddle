@@ -7,9 +7,17 @@
 #include <algorithm>
 #include <iostream>
 
-GameObject::GameObject(int id) : m_id(id), position(Vector2(0,0)), size(Vector2(1,1)), m_is_destroyed(false){}
+GameObject::GameObject(int id) : m_id(id), m_is_destroyed(false){
+    m_transform = new Transform();
+    m_parent = nullptr;
+}
 
-GameObject::GameObject(int id, Vector2 position, Vector2 size) : m_id(id), position(position), size(size), m_is_destroyed(false){}
+GameObject::GameObject(int id, Vector2 position, Vector2 size) : m_id(id), m_is_destroyed(false){
+    m_transform = new Transform();
+    m_transform->set_size(size);
+    m_transform->set_position(position);
+    m_parent = nullptr;
+}
 
 [[maybe_unused]] int GameObject::get_id() const {
     return m_id;
@@ -23,6 +31,8 @@ void GameObject::add_component(Component *comp) {
     }
     else{
         m_components.push_back(comp);
+        comp->set_parent(this);
+        comp->reset();
     }
 }
 

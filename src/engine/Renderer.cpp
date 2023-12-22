@@ -6,27 +6,17 @@
 #include "SDL_image.h"
 #include "../../include/engine/Renderer.h"
 
-Renderer::Renderer(const char *image, Vector2 size, SDL_Renderer* main_renderer): m_size(size), m_img_path(image), m_main_renderer(main_renderer) {
-    m_position = new SDL_Rect();
-    m_position->x = 0;
-    m_position->y = 0;
-    m_position->w = size.x;
-    m_position->h = size.y;
+Renderer::Renderer(const char *image, SDL_Renderer* main_renderer): m_img_path(image), m_main_renderer(main_renderer) {
+    m_rect = new SDL_Rect();
+    m_transform = new Transform;
+    m_rect->x = 0;
+    m_rect->y = 0;
+    m_rect->w = 1;
+    m_rect->h = 1;
     m_surface = IMG_Load(image);
     m_texture = SDL_CreateTextureFromSurface(main_renderer, m_surface);
     SDL_FreeSurface(m_surface);
-    SDL_QueryTexture(m_texture, nullptr, nullptr, &m_position->w, &m_position->h);
-}
-
-void Renderer::set_size(Vector2 size) {
-    m_size = size;
-    m_position->w = size.x;
-    m_position->h = size.y;
-}
-
-void Renderer::set_position(Vector2 pos) {
-    m_position->x = pos.x;
-    m_position->y = pos.y;
+    SDL_QueryTexture(m_texture, nullptr, nullptr, &m_rect->w, &m_rect->h);
 }
 
 void Renderer::set_texture(const char *image) {
@@ -34,11 +24,16 @@ void Renderer::set_texture(const char *image) {
     m_surface = IMG_Load(image);
     m_texture = SDL_CreateTextureFromSurface(m_main_renderer, m_surface);
     SDL_FreeSurface(m_surface);
-    SDL_QueryTexture(m_texture, nullptr, nullptr, &m_position->w, &m_position->h);
+    SDL_QueryTexture(m_texture, nullptr, nullptr, &m_rect->w, &m_rect->h);
 }
 
-void Renderer::update() {
-    SDL_RenderCopy(m_main_renderer, m_texture, nullptr, m_position);
+void Renderer::render() {
+    m_transform = m_parent->get_transform();
+    m_rect->w = m_transform->get_size().x;
+    m_rect->h = m_transform->get_size().y;
+    m_rect->x = m_transform->get_position().x;
+    m_rect->y = m_transform->get_position().y;
+    SDL_RenderCopy(m_main_renderer, m_texture, nullptr, m_rect);
 }
 
 void Renderer::end() {
@@ -48,4 +43,7 @@ void Renderer::end() {
 void Renderer::set_main_renderer(SDL_Renderer *main_renderer) {
     m_main_renderer = main_renderer;
 }
+
+
+
 

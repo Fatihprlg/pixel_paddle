@@ -20,4 +20,19 @@ void Component::end() {
 
 }
 
+void Component::reset() {
+
+}
+
+Component *Component::get_parent() {
+    return m_parent;
+}
+
+void Component::set_parent(Component *parent) {
+    m_parent = parent;
+}
+
+Transform* Component::get_transform() {
+    return m_transform;
+}
 Component::Component() = default;

@@ -5,8 +5,7 @@
 #include <algorithm>
 #include "../../include/engine/GameRenderer.h"
 #include "../../include/Constants.h"
-SDL_Renderer* GameRenderer::m_main_renderer;
-SDL_Window* GameRenderer::m_window;
+
 GameRenderer::GameRenderer() {
     try{
         if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
@@ -27,10 +26,9 @@ GameRenderer::GameRenderer() {
 void GameRenderer::make_render_loop() {
     SDL_RenderClear(m_main_renderer);
     for(Renderer* renderer: m_renderers){
-        renderer->update();
+        renderer->render();
     }
     SDL_RenderPresent(m_main_renderer);
-    SDL_Delay(1000/WINDOW_FPS);
 }
 
 void GameRenderer::add_renderer(Renderer *renderer) {

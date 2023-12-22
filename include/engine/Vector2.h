@@ -12,6 +12,8 @@ public:
     int y;
     Vector2(int x, int y);
     Vector2();
+    Vector2& operator=(const Vector2& other);
+
 };
 
 

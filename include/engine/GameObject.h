@@ -9,6 +9,7 @@
 #include <vector>
 #include "Vector2.h"
 #include "Component.h"
+#include "Transform.h"
 
 class GameObject : public Component{
 private:
@@ -16,11 +17,9 @@ private:
     std::vector<Component*> m_components;
     bool m_is_destroyed;
 public:
-    Vector2 position;
-    Vector2 size;
     explicit GameObject(int id);
     GameObject(int id, Vector2 position, Vector2 size);
-    [[maybe_unused]] int get_id() const;
+    [[maybe_unused]] [[nodiscard]] int get_id() const;
     void add_component(Component* comp);
     void remove_component(Component* comp);
     template<class T>

@@ -12,8 +12,8 @@
 
 class GameRenderer {
 private:
-    static SDL_Renderer* m_main_renderer;
-    static SDL_Window* m_window;
+    SDL_Renderer* m_main_renderer;
+    SDL_Window* m_window;
     std::vector<Renderer*> m_renderers;
 public:
     GameRenderer();
@@ -21,8 +21,8 @@ public:
     void add_renderer(Renderer* renderer);
     void remove_renderer(Renderer* renderer);
     void clear_all();
-    static SDL_Renderer* get_main_renderer();
-    static SDL_Window* get_window();
+    SDL_Renderer* get_main_renderer();
+    SDL_Window* get_window();
 };
 
 

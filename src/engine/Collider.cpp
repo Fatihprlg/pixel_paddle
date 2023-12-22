@@ -4,34 +4,20 @@
 
 #include "../../include/engine/Collider.h"
 
-Collider::Collider(Vector2 size, Vector2 position) : m_size(size), m_position(position) {}
-
-void Collider::set_size(Vector2 size) {
-    m_size = size;
-}
-
-void Collider::set_position(Vector2 position) {
-    m_position = position;
-}
-
-Vector2 Collider::get_size() {
-    return m_size;
-}
-
-Vector2 Collider::get_position() {
-    return m_position;
-}
-
 bool Collider::is_colliding_with(Collider other) const {
-    int thisMinX = m_position.x - m_size.x / 2;
-    int thisMaxX = m_position.x + m_size.x / 2;
-    int thisMinY = m_position.y - m_size.y / 2;
-    int thisMaxY = m_position.y + m_size.y / 2;
+    auto pos = m_transform->get_position();
+    auto size = m_transform->get_size();
+    auto other_pos = other.get_transform()->get_position();
+    auto other_size = other.get_transform()->get_size();
+    int thisMinX = pos.x - size.x / 2;
+    int thisMaxX = pos.x + size.x / 2;
+    int thisMinY = pos.y - size.y / 2;
+    int thisMaxY = pos.y + size.y / 2;
 
-    int otherMinX = other.get_position().x - other.get_size().x / 2;
-    int otherMaxX = other.get_position().x + other.get_size().x / 2;
-    int otherMinY = other.get_position().y - other.get_size().y / 2;
-    int otherMaxY = other.get_position().y + other.get_size().y / 2;
+    int otherMinX = other_pos.x - other_size.x / 2;
+    int otherMaxX = other_pos.x + other_size.x / 2;
+    int otherMinY = other_pos.y - other_size.y / 2;
+    int otherMaxY = other_pos.y + other_size.y / 2;
 
     if (thisMinX <= otherMaxX && thisMaxX >= otherMinX &&
         thisMinY <= otherMaxY && thisMaxY >= otherMinY) {
@@ -39,4 +25,13 @@ bool Collider::is_colliding_with(Collider other) const {
     }
 
     return false;
+}
+
+void Collider::update() {
+    m_transform = m_parent->get_transform();
+}
+
+void Collider::reset() {
+    m_transform = m_parent->get_transform();
+
 }

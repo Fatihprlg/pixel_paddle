@@ -11,15 +11,9 @@
 #include "string"
 
 class Collider : public Component{
-private:
-    Vector2 m_size;
-    Vector2 m_position;
 public:
-    Collider(Vector2 size, Vector2 position);
-    void set_size(Vector2 size);
-    Vector2 get_size();
-    void set_position(Vector2 position);
-    Vector2 get_position();
+    void reset() override;
+    void update() override;
     [[nodiscard]] bool is_colliding_with(Collider other) const;
 };
 

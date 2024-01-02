@@ -10,10 +10,10 @@ void GameManager::setup_game() {
     m_input_manager = new InputManager();
     m_input_manager->set_quit_handler(reinterpret_cast<quit_handler_t>(quit_handler()));
     m_is_quitting = false;
-    m_input_manager->handle_Input();
 }
 
 void GameManager::update_frame() {
+    m_input_manager->handle_Input();
     for(GameObject* go: m_game_objects){
         go->update();
     }

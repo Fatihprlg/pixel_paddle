@@ -1,0 +1,15 @@
+# ninja log v5
+3	383	7259228217017668	build.ninja	8bb662fc3cc049c4
+28	221	7249064651897527	CMakeFiles/PixelPaddle.dir/src/engine/Vector2.cpp.obj	bebae6d23ea4d522
+8	1705	7249080686592376	CMakeFiles/PixelPaddle.dir/src/engine/GameRenderer.cpp.obj	52eeeca7cc2343f2
+16	3009	7249080153194163	CMakeFiles/PixelPaddle.dir/main.cpp.obj	9b87137b583377af
+47	1227	7249064661943624	CMakeFiles/PixelPaddle.dir/src/engine/Component.cpp.obj	f51a4cd20cd2d471
+7	1118	7249075000102470	CMakeFiles/PixelPaddle.dir/src/engine/GameObject.cpp.obj	2a0ad3b632ad8a20
+79	271	7249064652402934	CMakeFiles/PixelPaddle.dir/src/engine/Transform.cpp.obj	b02b431f62587a33
+68	1209	7249064661767041	CMakeFiles/PixelPaddle.dir/src/engine/Collider.cpp.obj	a4109f1da1478cf6
+44	1718	7248081150292383	CMakeFiles/PixelPaddle.dir/src/engine/InputManager.cpp.obj	552f78ef3ec4a9d5
+8	1566	7249081616179049	CMakeFiles/PixelPaddle.dir/src/engine/GameManager.cpp.obj	84b9e4d098dc5b1a
+25	2706	7249080150156163	CMakeFiles/PixelPaddle.dir/src/engine/Renderer.cpp.obj	98b4c36caa43d3e5
+1566	2257	7249081622998516	PixelPaddle.exe	2b95a73826c95d35
+5	1116	7259229226485614	CMakeFiles/PixelPaddle.dir/src/engine/GameManager.cpp.obj	84b9e4d098dc5b1a
+1116	1705	7259229232306985	PixelPaddle.exe	2b95a73826c95d35

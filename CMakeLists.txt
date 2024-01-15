@@ -30,6 +30,8 @@ add_executable(PixelPaddle main.cpp
         include/engine/InputManager.h
         src/engine/Transform.cpp
         include/engine/Transform.h
+        include/engine/MoveProvider.cpp
+        include/engine/MoveProvider.h
 )
 target_link_libraries(
         ${PROJECT_NAME} ${CMAKE_SOURCE_DIR}/libs/SDL2/lib/libSDL2.dll.a ${CMAKE_SOURCE_DIR}/libs/SDL2/lib/libSDL2main.a

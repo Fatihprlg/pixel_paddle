@@ -15,8 +15,9 @@ class GameManager {
 private:
     std::vector<GameObject*> m_game_objects;
     GameRenderer* m_game_renderer;
-    InputManager* m_input_manager;
+    static InputManager* m_input_manager;
     bool m_is_quitting;
+    void * quit_handler();
 public:
     void setup_game();
     void update_frame();
@@ -24,9 +25,8 @@ public:
     void shutdown();
     void add_game_object(GameObject* go);
     void remove_game_object(GameObject* go);
-    void * quit_handler();
-    GameRenderer* get_game_renderer();
-    InputManager* get_input_manager();
+    [[nodiscard]] GameRenderer* get_game_renderer() const;
+    static InputManager* get_input_manager();
 };
 
 

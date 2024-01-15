@@ -5,10 +5,13 @@
 #include "../../include/engine/GameManager.h"
 #include "../../include/Constants.h"
 #include <algorithm>
+
+InputManager* GameManager::m_input_manager= nullptr;
+
 void GameManager::setup_game() {
     m_game_renderer = new GameRenderer();
     m_input_manager = new InputManager();
-    m_input_manager->set_quit_handler(reinterpret_cast<quit_handler_t>(quit_handler()));
+    m_input_manager->add_quit_handler(reinterpret_cast<quit_handler_t>(quit_handler()));
     m_is_quitting = false;
 }
 
@@ -49,7 +52,7 @@ void GameManager::remove_game_object(GameObject *go) {
     }
 }
 
-GameRenderer *GameManager::get_game_renderer() {
+GameRenderer *GameManager::get_game_renderer() const {
     return m_game_renderer;
 }
 
